@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78b2425a2284af743826c689403a4924, type: 3}
+  m_Name: N64 Filtering Sampler
+  m_EditorClassIdentifier: 
+  m_functionInfo: "// Made with Amplify Shader Editor v1.9.1.5\n// Available at the
+    Unity Asset Store - http://u3d.as/y3X \n/*ASEBEGIN\nVersion=19105\nNode;AmplifyShaderEditor.CommentaryNode;152;-3882.421,-547.5497;Inherit;False;256;161;;1;31;Sources;1,1,1,1;0;0\nNode;AmplifyShaderEditor.CommentaryNode;149;-2761.364,-270.8168;Inherit;False;758.054;532.21;Sample
+    points, blend together, and return;4;137;132;138;150;;1,1,1,1;0;0\nNode;AmplifyShaderEditor.CommentaryNode;10;-3886.907,-284.4138;Inherit;False;802.1791;587.6094;Inputs
+    (& Texel Size);7;2;7;9;6;1;3;5;;1,1,1,1;0;0\nNode;AmplifyShaderEditor.RegisterLocalVarNode;5;-3539.836,-234.4138;Inherit;False;input_MainTex;-1;True;1;0;SAMPLER2D;;False;1;SAMPLER2D;0\nNode;AmplifyShaderEditor.FunctionInput;3;-3732.626,-234.3705;Inherit;False;Main
+    Texture;9;0;False;1;0;SAMPLER2D;0;False;1;SAMPLER2D;0\nNode;AmplifyShaderEditor.TexelSizeNode;1;-3629.195,55.09561;Inherit;False;-1;1;0;SAMPLER2D;;False;5;FLOAT4;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4\nNode;AmplifyShaderEditor.GetLocalVarNode;6;-3836.907,50.68703;Inherit;False;5;input_MainTex;1;0;OBJECT;;False;1;SAMPLER2D;0\nNode;AmplifyShaderEditor.RegisterLocalVarNode;9;-3539.606,-96.32502;Inherit;False;input_UV;-1;True;1;0;FLOAT2;0,0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.FunctionInput;7;-3712.627,-96.32504;Inherit;False;UV;2;1;False;1;0;FLOAT2;0,0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.RegisterLocalVarNode;2;-3428.728,52.32755;Inherit;False;input_TexelSize;-1;True;1;0;FLOAT4;0,0,0,0;False;1;FLOAT4;0\nNode;AmplifyShaderEditor.GetLocalVarNode;137;-2706.163,-114.2166;Inherit;False;5;input_MainTex;1;0;OBJECT;;False;1;SAMPLER2D;0\nNode;AmplifyShaderEditor.GetLocalVarNode;150;-2679.749,-43.00299;Inherit;False;9;input_UV;1;0;OBJECT;;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.GetLocalVarNode;151;-2712.749,28.99701;Inherit;False;2;input_TexelSize;1;0;OBJECT;;False;1;FLOAT4;0\nNode;AmplifyShaderEditor.RegisterLocalVarNode;138;-2250.308,-65.46278;Inherit;False;FinalSampleRGBA;-1;True;1;0;FLOAT4;0,0,0,0;False;1;FLOAT4;0\nNode;AmplifyShaderEditor.BreakToComponentsNode;141;-1464.018,-81.54028;Inherit;False;FLOAT4;1;0;FLOAT4;0,0,0,0;False;16;FLOAT;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4;FLOAT;5;FLOAT;6;FLOAT;7;FLOAT;8;FLOAT;9;FLOAT;10;FLOAT;11;FLOAT;12;FLOAT;13;FLOAT;14;FLOAT;15\nNode;AmplifyShaderEditor.FunctionOutput;142;-1260.018,-99.54028;Inherit;False;False;-1;R;1;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionOutput;145;-1259.018,-32.54027;Inherit;False;False;-1;G;2;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionOutput;146;-1259.018,32.45975;Inherit;False;False;-1;B;3;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionOutput;147;-1258.018,100.4597;Inherit;False;False;-1;A;4;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionOutput;0;-1257.472,-182.0123;Inherit;False;True;-1;RGBA;0;True;1;0;FLOAT4;0,0,0,0;False;1;FLOAT4;0\nNode;AmplifyShaderEditor.GetLocalVarNode;139;-1702.2,-181.3177;Inherit;False;138;FinalSampleRGBA;1;0;OBJECT;;False;1;FLOAT4;0\nNode;AmplifyShaderEditor.CustomExpressionNode;132;-2459.016,-64.05385;Float;False;//
+    texel coordinates$float2 texels = uv * texelSize.zw@$$// calculate mip level$float2
+    dx = ddx(texels)@$float2 dy = ddy(texels)@$float delta_max_sqr = max(dot(dx,
+    dx), dot(dy, dy))@$float mip = max(0.0, 0.5 * log2(delta_max_sqr))@$$// scale
+    texel sizes and texel coordinates to handle mip levels properly$float scale =
+    pow(2,floor(mip))@$texelSize.xy *= scale@$texelSize.zw /= scale@$texels = texels
+    / scale - 0.5@$$// calculate blend for the three points of the tri-filter$float2
+    fracTexels = frac(texels)@$float3 blend = float3($    abs(fracTexels.x+fracTexels.y-1),$   
+    min(abs(fracTexels.xx-float2(0,1)), abs(fracTexels.yy-float2(1,0)))$)@$$// calculate
+    equivalents of point filtered uvs for the three points$float2 uvA = (floor(texels
+    + fracTexels.yx) + 0.5) * texelSize.xy@$float2 uvB = (floor(texels) + float2(1.5,
+    0.5)) * texelSize.xy@$float2 uvC = (floor(texels) + float2(0.5, 1.5)) * texelSize.xy@$$//
+    sample points$fixed4 A = tex2Dlod(tex, float4(uvA, 0, mip))@$fixed4 B = tex2Dlod(tex,
+    float4(uvB, 0, mip))@$fixed4 C = tex2Dlod(tex, float4(uvC, 0, mip))@$$// blend
+    and return$return A * blend.x + B * blend.y + C * blend.z@;4;Create;3;False;tex;SAMPLER2D;;In;;Inherit;False;False;uv;FLOAT2;0,0;In;;Inherit;False;False;texelSize;FLOAT4;0,0,0,0;In;;Inherit;False;N64Filtering;True;False;0;;False;3;0;SAMPLER2D;;False;1;FLOAT2;0,0;False;2;FLOAT4;0,0,0,0;False;1;FLOAT4;0\nNode;AmplifyShaderEditor.CustomExpressionNode;31;-3832.421,-497.5497;Inherit;False;//
+    N64 Style Filtering:$// (https://forum.unity.com/threads/shader-ideas-for-replicating-n64-bi-linear-filtering.936119/#post-6116207)$$//
+    Original ShaderToy:$// (https://www.shadertoy.com/view/wdy3RW);1;Create;0;N64
+    Filtering Sources;False;True;0;;False;0;1;FLOAT;0\nWireConnection;5;0;3;0\nWireConnection;1;0;6;0\nWireConnection;9;0;7;0\nWireConnection;2;0;1;0\nWireConnection;138;0;132;0\nWireConnection;141;0;139;0\nWireConnection;142;0;141;0\nWireConnection;145;0;141;1\nWireConnection;146;0;141;2\nWireConnection;147;0;141;3\nWireConnection;0;0;139;0\nWireConnection;132;0;137;0\nWireConnection;132;1;150;0\nWireConnection;132;2;151;0\nASEEND*/\n//CHKSM=66B90FAC34AEF9B86C222242A2698B2A3426890C"
+  m_functionName: 
+  m_description: N64-style texture filtering. HLSL source by BGolus.
+  m_additionalIncludes:
+    m_additionalIncludes: []
+    m_outsideIncludes: []
+  m_additionalPragmas:
+    m_additionalPragmas: []
+    m_outsidePragmas: []
+  m_additionalDirectives:
+    m_validData: 0
+    m_isDirty: 0
+    m_moduleName: ' Additional Directives'
+    m_independentModule: 1
+    m_customEdited: 0
+    m_additionalDirectives: []
+    m_shaderFunctionDirectives: []
+    m_nativeDirectives: []
+    m_nativeDirectivesIndex: -1
+    m_nativeDirectivesFoldout: 0
+    m_directivesSaveItems: []
+  m_nodeCategory: 0
+  m_headerStyle: 2
+  m_headerColor: {r: 1, g: 0, b: 1, a: 1}
+  m_customNodeCategory: SuperRetro
+  m_previewPosition: 0
+  m_hidden: 0
+  m_url: https://forum.unity.com/threads/shader-ideas-for-replicating-n64-bi-linear-filtering.936119/#post-6116207

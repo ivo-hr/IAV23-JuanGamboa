@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78b2425a2284af743826c689403a4924, type: 3}
+  m_Name: Symm's Retro UV Calc
+  m_EditorClassIdentifier: 
+  m_functionInfo: "// Made with Amplify Shader Editor v1.9.1.5\n// Available at the
+    Unity Asset Store - http://u3d.as/y3X \n/*ASEBEGIN\nVersion=19105\nNode;AmplifyShaderEditor.CommentaryNode;64;-1912.412,-109.1149;Inherit;False;2217.704;387.4426;;14;70;51;46;45;42;55;43;48;41;40;54;49;60;75;Calculate
+    Affined UV;1,1,1,1;0;0\nNode;AmplifyShaderEditor.CommentaryNode;75;-272.9879,85.3353;Inherit;False;188;176;Prevent
+    weirdness;1;71;;1,1,1,1;0;0\nNode;AmplifyShaderEditor.CommentaryNode;74;-1720.094,288.7072;Inherit;False;594.1379;285.171;Find
+    the distance from a vertex to the camera;4;73;68;67;79;;1,1,1,1;0;0\nNode;AmplifyShaderEditor.CommentaryNode;61;387.2122,-104.7768;Inherit;False;680.9879;305.7581;;5;0;63;56;57;6;Return
+    UV;1,1,1,1;0;0\nNode;AmplifyShaderEditor.CommentaryNode;60;-1176.161,-37.19787;Inherit;False;212;185;OPTIMIZE.;1;44;;1,1,1,1;0;0\nNode;AmplifyShaderEditor.CommentaryNode;59;-2862.69,-133.6458;Inherit;False;745.386;527.6899;;11;1;5;15;14;9;7;53;4;2;76;78;Inputs;1,1,1,1;0;0\nNode;AmplifyShaderEditor.FunctionInput;1;-2795.188,12.35423;Inherit;False;Texture
+    Sample;9;0;False;1;0;SAMPLER2D;0;False;1;SAMPLER2D;0\nNode;AmplifyShaderEditor.RegisterLocalVarNode;5;-2580.441,10.70641;Inherit;False;input_TexSample;-1;True;1;0;SAMPLER2D;;False;1;SAMPLER2D;0\nNode;AmplifyShaderEditor.RegisterLocalVarNode;15;-2584.281,109.9923;Inherit;False;input_AffineStrength;-1;True;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionInput;14;-2794.281,109.9923;Inherit;False;Affine
+    Strength;1;2;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.RegisterLocalVarNode;4;-2583.274,-83.38775;Inherit;False;input_GetAffinedUV;-1;True;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionInput;2;-2812.69,-83.64577;Inherit;False;Get
+    Affined UV? (0/1);1;1;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.GetLocalVarNode;6;437.2122,-54.77681;Inherit;False;4;input_GetAffinedUV;1;0;OBJECT;;False;1;FLOAT;0\nNode;AmplifyShaderEditor.GetLocalVarNode;57;468.8031,19.98122;Inherit;False;55;var_UVAffined;1;0;OBJECT;;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.GetLocalVarNode;56;466.8031,93.98122;Inherit;False;53;var_TexCoords;1;0;OBJECT;;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.Compare;63;691.2437,-23.78906;Inherit;False;0;4;0;FLOAT;0;False;1;FLOAT;1;False;2;FLOAT2;0,0;False;3;FLOAT2;0,0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.FunctionOutput;0;899.8364,-22.83814;Inherit;False;True;-1;Final
+    UV;0;False;1;0;FLOAT2;0,0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.SimpleMultiplyOpNode;49;-1406.152,12.79383;Inherit;False;2;2;0;FLOAT2;0,0;False;1;FLOAT;0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.GetLocalVarNode;54;-1669.373,-57.35814;Inherit;False;53;var_TexCoords;1;0;OBJECT;;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.PosVertexDataNode;40;-1862.412,68.72772;Inherit;False;1;0;5;FLOAT4;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4\nNode;AmplifyShaderEditor.UnityObjToClipPosHlpNode;41;-1663.412,68.72772;Inherit;False;1;0;FLOAT3;0,0,0;False;5;FLOAT4;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4\nNode;AmplifyShaderEditor.CommentaryNode;65;-2858.912,-670.5508;Inherit;False;217;239;;2;66;82;Sources;1,1,1,1;0;0\nNode;AmplifyShaderEditor.ObjSpaceViewDirHlpNode;67;-1670.094,338.8782;Inherit;False;1;0;FLOAT4;0,0,0,1;False;4;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3\nNode;AmplifyShaderEditor.LengthOpNode;68;-1459.087,339.1355;Inherit;False;1;0;FLOAT3;0,0,0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.DynamicAppendNode;44;-1126.161,12.80213;Inherit;False;FLOAT4;4;0;FLOAT2;0,0;False;1;FLOAT;0;False;2;FLOAT;0;False;3;FLOAT;0;False;1;FLOAT4;0\nNode;AmplifyShaderEditor.SimpleDivideOpNode;48;-437.8715,35.8658;Inherit;False;2;0;FLOAT2;0,0;False;1;FLOAT;0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.LerpOp;43;-73.96278,-54.88519;Inherit;False;3;0;FLOAT2;0,0;False;1;FLOAT2;0,0;False;2;FLOAT;0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.RegisterLocalVarNode;55;98.19181,-59.1149;Inherit;False;var_UVAffined;-1;True;1;0;FLOAT2;0,0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.VertexToFragmentNode;42;-947.1733,12.8658;Inherit;False;False;False;1;0;FLOAT4;0,0,0,0;False;1;FLOAT4;0\nNode;AmplifyShaderEditor.BreakToComponentsNode;45;-727.8714,12.8658;Inherit;False;FLOAT4;1;0;FLOAT4;0,0,0,0;False;16;FLOAT;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4;FLOAT;5;FLOAT;6;FLOAT;7;FLOAT;8;FLOAT;9;FLOAT;10;FLOAT;11;FLOAT;12;FLOAT;13;FLOAT;14;FLOAT;15\nNode;AmplifyShaderEditor.DynamicAppendNode;46;-593.8714,12.8658;Inherit;False;FLOAT2;4;0;FLOAT;0;False;1;FLOAT;0;False;2;FLOAT;0;False;3;FLOAT;0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.GetLocalVarNode;51;-635.0452,199.0491;Inherit;False;15;input_AffineStrength;1;0;OBJECT;;False;1;FLOAT;0\nNode;AmplifyShaderEditor.SimpleMultiplyOpNode;70;-400.9879,135.3353;Inherit;False;2;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.ClampOpNode;71;-237.9879,135.3353;Inherit;False;3;0;FLOAT;0;False;1;FLOAT;0;False;2;FLOAT;1;False;1;FLOAT;0\nNode;AmplifyShaderEditor.SimpleSubtractOpNode;73;-1298.957,339.7072;Inherit;False;2;0;FLOAT;0;False;1;FLOAT;1;False;1;FLOAT;0\nNode;AmplifyShaderEditor.GetLocalVarNode;9;-2806.572,309.4441;Inherit;False;5;input_TexSample;1;0;OBJECT;;False;1;SAMPLER2D;0\nNode;AmplifyShaderEditor.TextureCoordinatesNode;7;-2588.87,315.0441;Inherit;False;0;-1;2;3;2;SAMPLER2D;;False;0;FLOAT2;1,1;False;1;FLOAT2;0,0;False;5;FLOAT2;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4\nNode;AmplifyShaderEditor.RegisterLocalVarNode;53;-2344.304,313.648;Inherit;False;var_TexCoords;-1;True;1;0;FLOAT2;0,0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.FunctionInput;76;-2819.914,195.5587;Inherit;False;Affine
+    Camera Clip Bias;1;3;False;1;0;FLOAT;-1;False;1;FLOAT;0\nNode;AmplifyShaderEditor.RegisterLocalVarNode;78;-2584.914,195.5587;Inherit;False;input_AffineCameraClipBias;-1;True;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.GetLocalVarNode;79;-1712.914,485.5587;Inherit;False;78;input_AffineCameraClipBias;1;0;OBJECT;;False;1;FLOAT;0\nNode;AmplifyShaderEditor.NegateNode;81;-1449.914,490.5587;Inherit;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.CustomExpressionNode;66;-2828.912,-619.5508;Inherit;False;//
+    PlayStation 1 Affine Texture Mapping in Shader Code:$// (https://danielilett.com/2021-11-06-tut5-21-ps1-affine-textures/);1;Create;0;PS1
+    Affine UV Source;False;True;0;;False;0;1;FLOAT;0\nNode;AmplifyShaderEditor.CustomExpressionNode;82;-2837.735,-537.0838;Inherit;False;//
+    \"best way to calculate the distance between camera and vertex position?\":$//
+    (https://forum.unity.com/threads/best-way-to-calculate-the-distance-between-camera-and-vertex-position.140917/#post-2117292);1;Create;0;Vertex
+    Dist from Camera;False;True;0;;False;0;1;FLOAT;0\nWireConnection;5;0;1;0\nWireConnection;15;0;14;0\nWireConnection;4;0;2;0\nWireConnection;63;0;6;0\nWireConnection;63;2;57;0\nWireConnection;63;3;56;0\nWireConnection;0;0;63;0\nWireConnection;49;0;54;0\nWireConnection;49;1;41;4\nWireConnection;41;0;40;0\nWireConnection;67;0;40;0\nWireConnection;68;0;67;0\nWireConnection;44;0;49;0\nWireConnection;44;2;41;4\nWireConnection;44;3;73;0\nWireConnection;48;0;46;0\nWireConnection;48;1;45;2\nWireConnection;43;0;54;0\nWireConnection;43;1;48;0\nWireConnection;43;2;71;0\nWireConnection;55;0;43;0\nWireConnection;42;0;44;0\nWireConnection;45;0;42;0\nWireConnection;46;0;45;0\nWireConnection;46;1;45;1\nWireConnection;70;0;45;3\nWireConnection;70;1;51;0\nWireConnection;71;0;70;0\nWireConnection;73;0;68;0\nWireConnection;73;1;81;0\nWireConnection;7;2;9;0\nWireConnection;53;0;7;0\nWireConnection;78;0;76;0\nWireConnection;81;0;79;0\nASEEND*/\n//CHKSM=9DC51650884ACC3376516F0D745B0F60F95B9CF2"
+  m_functionName: 
+  m_description: Returns the material's chosen UV.
+  m_additionalIncludes:
+    m_additionalIncludes: []
+    m_outsideIncludes: []
+  m_additionalPragmas:
+    m_additionalPragmas: []
+    m_outsidePragmas: []
+  m_additionalDirectives:
+    m_validData: 0
+    m_isDirty: 1
+    m_moduleName: ' Additional Directives'
+    m_independentModule: 1
+    m_customEdited: 0
+    m_additionalDirectives: []
+    m_shaderFunctionDirectives: []
+    m_nativeDirectives: []
+    m_nativeDirectivesIndex: -1
+    m_nativeDirectivesFoldout: 0
+    m_directivesSaveItems: []
+  m_nodeCategory: 0
+  m_headerStyle: 2
+  m_headerColor: {r: 1, g: 0, b: 1, a: 1}
+  m_customNodeCategory: SymmRetro
+  m_previewPosition: 0
+  m_hidden: 1
+  m_url: 
