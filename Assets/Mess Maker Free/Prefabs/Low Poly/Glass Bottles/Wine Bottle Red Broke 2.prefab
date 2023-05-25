@@ -16,7 +16,10 @@ GameObject:
   - component: {fileID: -6657567091094547714}
   - component: {fileID: 5636834240377837289}
   - component: {fileID: 4623336613197182879}
-  m_Layer: 0
+  - component: {fileID: 9197049394312601038}
+  - component: {fileID: 7772723487273262673}
+  - component: {fileID: -6269917901997997342}
+  m_Layer: 6
   m_Name: Wine Bottle Red Broke 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -238,3 +241,49 @@ MonoBehaviour:
   velocityAverageFrames: 5
   angularVelocityAverageFrames: 11
   estimateOnAwake: 0
+--- !u!114 &9197049394312601038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8322863303335674192}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0308dd5f44f7b8e4ca9037ecce9d27fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundPrefab: {fileID: 2190774385839050180, guid: 73401294b0b2f9c4db533c76b7cc8d5a, type: 3}
+  soundRange: 10
+  soundDuration: 2
+  sounding: 0
+  thrown: 0
+--- !u!208 &7772723487273262673
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8322863303335674192}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.095000006, y: 0.095000006, z: 0.293}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0.22000001}
+  m_TimeToStationary: 0.5
+--- !u!114 &-6269917901997997342
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8322863303335674192}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ca744b11d3121a42bfe6454fdde9097, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  knockback: 15

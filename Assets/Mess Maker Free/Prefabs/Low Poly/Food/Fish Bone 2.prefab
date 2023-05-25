@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6285635585459015414}
   - component: {fileID: 6699304224870563948}
   - component: {fileID: -5224089314846810209}
+  - component: {fileID: 3220798733817448385}
   m_Layer: 0
   m_Name: Fish Bone 2
   m_TagString: Untagged
@@ -30,6 +31,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -53,6 +55,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -112,3 +115,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.40095904, y: 0.06609698, z: 0.18494149}
   m_Center: {x: -0.12581079, y: -0.000938531, z: 0.0011594817}
+--- !u!208 &3220798733817448385
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1171627040053429581}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.2, y: 0.033, z: 0.09200001}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: -0.126, y: -0.001, z: 0.001}
+  m_TimeToStationary: 0.5

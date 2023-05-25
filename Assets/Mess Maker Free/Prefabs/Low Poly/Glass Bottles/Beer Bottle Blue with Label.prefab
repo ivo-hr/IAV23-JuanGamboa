@@ -16,7 +16,10 @@ GameObject:
   - component: {fileID: 3050275226773169332}
   - component: {fileID: -6165649846668931510}
   - component: {fileID: -4266318157267858939}
-  m_Layer: 0
+  - component: {fileID: -6063334591386835742}
+  - component: {fileID: 1885010473737399969}
+  - component: {fileID: 5983752504941830472}
+  m_Layer: 6
   m_Name: Beer Bottle Blue with Label
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -239,6 +242,52 @@ MonoBehaviour:
   velocityAverageFrames: 5
   angularVelocityAverageFrames: 11
   estimateOnAwake: 0
+--- !u!114 &-6063334591386835742
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3406732096623023888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0308dd5f44f7b8e4ca9037ecce9d27fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundPrefab: {fileID: 2190774385839050180, guid: 73401294b0b2f9c4db533c76b7cc8d5a, type: 3}
+  soundRange: 10
+  soundDuration: 2
+  sounding: 0
+  thrown: 0
+--- !u!208 &1885010473737399969
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3406732096623023888}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.056, y: 0.056, z: 0.24200001}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: -0.003}
+  m_TimeToStationary: 0.5
+--- !u!114 &5983752504941830472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3406732096623023888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ca744b11d3121a42bfe6454fdde9097, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  knockback: 15
 --- !u!1 &8103492697189698663
 GameObject:
   m_ObjectHideFlags: 0
@@ -250,7 +299,7 @@ GameObject:
   - component: {fileID: 2100294755015394104}
   - component: {fileID: 7734722426608953870}
   - component: {fileID: 4472039918343320896}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Label
   m_TagString: Untagged
   m_Icon: {fileID: 0}

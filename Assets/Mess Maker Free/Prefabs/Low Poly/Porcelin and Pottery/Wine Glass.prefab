@@ -16,7 +16,10 @@ GameObject:
   - component: {fileID: 2890947088634749787}
   - component: {fileID: 5170163122595413772}
   - component: {fileID: -3319393109984860920}
-  m_Layer: 0
+  - component: {fileID: 5894208075573174839}
+  - component: {fileID: 3473763015264354258}
+  - component: {fileID: -1991609570587657973}
+  m_Layer: 6
   m_Name: Wine Glass
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -238,3 +241,49 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   interactable: {fileID: 0}
+--- !u!114 &5894208075573174839
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3016437080816719917}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0308dd5f44f7b8e4ca9037ecce9d27fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundPrefab: {fileID: 2190774385839050180, guid: 73401294b0b2f9c4db533c76b7cc8d5a, type: 3}
+  soundRange: 15
+  soundDuration: 2
+  sounding: 0
+  thrown: 0
+--- !u!208 &3473763015264354258
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3016437080816719917}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.106000006, y: 0.106000006, z: 0.17}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: -0.034}
+  m_TimeToStationary: 0.5
+--- !u!114 &-1991609570587657973
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3016437080816719917}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ca744b11d3121a42bfe6454fdde9097, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  knockback: 10

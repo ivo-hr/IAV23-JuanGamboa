@@ -16,7 +16,10 @@ GameObject:
   - component: {fileID: -1974729657159136254}
   - component: {fileID: 1852029429121477122}
   - component: {fileID: -8875652314911939547}
-  m_Layer: 0
+  - component: {fileID: -6454530046298920545}
+  - component: {fileID: 8774163569391047018}
+  - component: {fileID: 2905872537886801426}
+  m_Layer: 6
   m_Name: Wine Bottle Green Broke 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -238,3 +241,49 @@ MonoBehaviour:
   velocityAverageFrames: 5
   angularVelocityAverageFrames: 11
   estimateOnAwake: 0
+--- !u!114 &-6454530046298920545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8322863303335674192}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0308dd5f44f7b8e4ca9037ecce9d27fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundPrefab: {fileID: 2190774385839050180, guid: 73401294b0b2f9c4db533c76b7cc8d5a, type: 3}
+  soundRange: 10
+  soundDuration: 2
+  sounding: 0
+  thrown: 0
+--- !u!208 &8774163569391047018
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8322863303335674192}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.095000006, y: 0.095000006, z: 0.293}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0.22000001}
+  m_TimeToStationary: 0.5
+--- !u!114 &2905872537886801426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8322863303335674192}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ca744b11d3121a42bfe6454fdde9097, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  knockback: 15

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1444849005760471628}
   - component: {fileID: 4112388922274550087}
   - component: {fileID: 5154692702828744844}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Label
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -99,7 +99,10 @@ GameObject:
   - component: {fileID: -8156500758556293490}
   - component: {fileID: -1852353314238469911}
   - component: {fileID: -4931105594581365438}
-  m_Layer: 0
+  - component: {fileID: 2313691979188491605}
+  - component: {fileID: -9108061273361684761}
+  - component: {fileID: 8246174156539224273}
+  m_Layer: 6
   m_Name: Vodka Bottle with label
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -322,3 +325,49 @@ MonoBehaviour:
   velocityAverageFrames: 5
   angularVelocityAverageFrames: 11
   estimateOnAwake: 0
+--- !u!114 &2313691979188491605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4761393018483043083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0308dd5f44f7b8e4ca9037ecce9d27fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundPrefab: {fileID: 2190774385839050180, guid: 73401294b0b2f9c4db533c76b7cc8d5a, type: 3}
+  soundRange: 10
+  soundDuration: 2
+  sounding: 0
+  thrown: 0
+--- !u!208 &-9108061273361684761
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4761393018483043083}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.048, y: 0.14, z: 0.287}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0.002}
+  m_TimeToStationary: 0.5
+--- !u!114 &8246174156539224273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4761393018483043083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ca744b11d3121a42bfe6454fdde9097, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  knockback: 15
