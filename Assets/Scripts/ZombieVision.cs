@@ -24,11 +24,12 @@ public class ZombieVision : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        attentionTimer += Time.deltaTime;
+        if (!zombieAI.seeingPlayer) attentionTimer += Time.deltaTime;
         if (attentionTimer >= zombieAI.attentionSpan)
         {
             zombieAI.followingPlayer = false;
             zombieAI.roaming = true;
+            attentionTimer = 0f;
 
         }
 
@@ -49,7 +50,7 @@ public class ZombieVision : MonoBehaviour
             float angle = Vector3.Angle(transform.forward, hitDirection);
 
             // Check if the hit object is within the specified angle range
-            if (angle <= zombieAI.detectionAngle ||angle >= 360-zombieAI.detectionAngle)
+            if (angle <= zombieAI.detectionAngle || angle >= 360-zombieAI.detectionAngle)
             {
                 // Handle the hit object within the specified vision angle
                 Debug.Log("Raycast Hit: " + hit.collider.gameObject.name);
@@ -63,14 +64,6 @@ public class ZombieVision : MonoBehaviour
                     attentionTimer = 0f;
                     focusVision = zombieAI.detectionRange * 2;
                 }
-                else if (hit.collider.gameObject.layer == LayerMask.NameToLayer("Throwables") && !zombieAI.seeingPlayer)
-                {
-                    zombieAI.followingSound = true;
-                    zombieAI.roaming = false;
-                    zombieAI.followingPlayer = false;
-                    zombieAI.target = hit.collider.gameObject.transform.position;
-                }
-
                 else
                 {
                     zombieAI.seeingPlayer = false;

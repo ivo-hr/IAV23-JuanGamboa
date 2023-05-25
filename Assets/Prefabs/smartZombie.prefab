@@ -225,7 +225,7 @@ ParticleSystem:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-  moveWithTransform: 1
+  moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
   randomSeed: 0
@@ -4942,21 +4942,41 @@ PrefabInstance:
       propertyPath: m_Name
       value: smartZombie
       objectReference: {fileID: 0}
+    - target: {fileID: 1801438520693752582, guid: ba01090714ce5ce4e802d9816c8b9b65, type: 3}
+      propertyPath: m_Pitch
+      value: -1.69
+      objectReference: {fileID: 0}
+    - target: {fileID: 1801438520693752582, guid: ba01090714ce5ce4e802d9816c8b9b65, type: 3}
+      propertyPath: m_Volume
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1801438520693752582, guid: ba01090714ce5ce4e802d9816c8b9b65, type: 3}
+      propertyPath: MaxDistance
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 1801438520693752582, guid: ba01090714ce5ce4e802d9816c8b9b65, type: 3}
+      propertyPath: MinDistance
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1801438520693752582, guid: ba01090714ce5ce4e802d9816c8b9b65, type: 3}
+      propertyPath: rolloffMode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3829341452324950091, guid: ba01090714ce5ce4e802d9816c8b9b65, type: 3}
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3829341452324950091, guid: ba01090714ce5ce4e802d9816c8b9b65, type: 3}
       propertyPath: m_LocalScale.x
-      value: 4
+      value: 1.6
       objectReference: {fileID: 0}
     - target: {fileID: 3829341452324950091, guid: ba01090714ce5ce4e802d9816c8b9b65, type: 3}
       propertyPath: m_LocalScale.y
-      value: 4
+      value: 1.6
       objectReference: {fileID: 0}
     - target: {fileID: 3829341452324950091, guid: ba01090714ce5ce4e802d9816c8b9b65, type: 3}
       propertyPath: m_LocalScale.z
-      value: 4
+      value: 1.6
       objectReference: {fileID: 0}
     - target: {fileID: 3829341452324950091, guid: ba01090714ce5ce4e802d9816c8b9b65, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5049,18 +5069,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   roamSpeed: 1
   soundSpeed: 3
-  detectionSpeed: 5
-  soundRange: 10
+  detectionSpeed: 7
+  soundRange: 5
   attentionSpan: 10
-  detectionRange: 10
-  detectionAngle: 10
-  Ragdoll: 0
+  detectionRange: 15
+  detectionAngle: 60
   seeingPlayer: 0
   followingPlayer: 0
   hearingSound: 0
   roaming: 1
   target: {x: 0, y: 0, z: 0}
-  playerObj: {fileID: 0}
   followingSound: 0
 --- !u!114 &8087190541842288474
 MonoBehaviour:
@@ -5074,7 +5092,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fdeffef3d1b3b314faf0f8b36fbfa573, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeDead: 10
+  timeDead: 5
 --- !u!4 &8331780088133244323 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3829341452324950091, guid: ba01090714ce5ce4e802d9816c8b9b65, type: 3}

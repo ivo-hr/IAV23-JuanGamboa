@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.AI;
 using Valve.VR.InteractionSystem;
@@ -10,12 +11,13 @@ public class ZombieDeath : MonoBehaviour
     [SerializeField] private float timeDead = 10;
     private float timeDeadCounter = 0;
     private bool isDead = false;
+    private ZombieSpawner zombieSpawner;
     // Start is called before the first frame update
 
 
     void Start()
     {
-
+        zombieSpawner = FindAnyObjectByType<ZombieSpawner>();
 
     }
 
@@ -44,7 +46,11 @@ public class ZombieDeath : MonoBehaviour
         gameObject.GetComponent<NavMeshAgent>().enabled = false;
         gameObject.GetComponent<Animator>().Play("Z_FallingBack");
         gameObject.GetComponentInChildren<ZombieHearing>().enabled = false;
+
+        zombieSpawner.KilledZombie();
         isDead = true;
+
+        
     }
 
 

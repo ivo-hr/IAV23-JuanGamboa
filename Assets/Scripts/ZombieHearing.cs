@@ -26,10 +26,9 @@ public class ZombieHearing : MonoBehaviour
         {
             zombieAI.hearingSound = false;
             zombieAI.roaming = true;
+            attentionTimer = 0f;
                 
         }
-
-        
     }
 
     private void OnTriggerStay(Collider other)
