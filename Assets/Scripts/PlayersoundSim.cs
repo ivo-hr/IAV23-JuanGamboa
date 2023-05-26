@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayersoundSim : MonoBehaviour
 {
     [SerializeField] private GameObject soundPrefab;
+    [SerializeField] private float soundRange = 10f;
     [SerializeField] private float speedToSound = 5f;
 
     private Vector3 lastPos;
@@ -28,6 +29,7 @@ public class PlayersoundSim : MonoBehaviour
                 Destroy(sound);
             sound = Instantiate(soundPrefab);
             sound.transform.position = transform.position;
+            sound.transform.localScale = new Vector3(soundRange, soundRange, soundRange);
         }
 
         soundTimer += Time.deltaTime;

@@ -99,7 +99,6 @@ GameObject:
   - component: {fileID: -5656799250044572528}
   - component: {fileID: 6002564558857185610}
   - component: {fileID: 6993507883164283718}
-  - component: {fileID: 6388663583130404475}
   - component: {fileID: -5943343144800424381}
   m_Layer: 6
   m_Name: Beer Can Green
@@ -326,22 +325,6 @@ MonoBehaviour:
   soundDuration: 2
   sounding: 0
   thrown: 0
---- !u!208 &6388663583130404475
-NavMeshObstacle:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8847306447234913185}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Shape: 1
-  m_Extents: {x: 0.075, y: 0.075, z: 0.21100001}
-  m_MoveThreshold: 0.1
-  m_Carve: 1
-  m_CarveOnlyStationary: 1
-  m_Center: {x: 0, y: 0, z: -0.085}
-  m_TimeToStationary: 0.5
 --- !u!114 &-5943343144800424381
 MonoBehaviour:
   m_ObjectHideFlags: 0

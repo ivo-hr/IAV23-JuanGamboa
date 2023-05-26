@@ -17,7 +17,6 @@ GameObject:
   - component: {fileID: 4852277426589000600}
   - component: {fileID: -568771004200662386}
   - component: {fileID: -2776782830716198730}
-  - component: {fileID: 7442970395752093400}
   - component: {fileID: -132627273483028364}
   m_Layer: 6
   m_Name: Broken Pottery 2
@@ -258,22 +257,6 @@ MonoBehaviour:
   soundDuration: 2
   sounding: 0
   thrown: 0
---- !u!208 &7442970395752093400
-NavMeshObstacle:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2033160906336582249}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Shape: 1
-  m_Extents: {x: 0.14, y: 0.19500001, z: 0.12100001}
-  m_MoveThreshold: 0.1
-  m_Carve: 1
-  m_CarveOnlyStationary: 1
-  m_Center: {x: -0.063, y: -0.008, z: -0.003}
-  m_TimeToStationary: 0.5
 --- !u!114 &-132627273483028364
 MonoBehaviour:
   m_ObjectHideFlags: 0

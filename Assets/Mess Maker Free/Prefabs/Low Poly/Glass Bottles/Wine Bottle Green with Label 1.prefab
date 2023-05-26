@@ -100,7 +100,6 @@ GameObject:
   - component: {fileID: 5742140578606923606}
   - component: {fileID: 5372567688942855689}
   - component: {fileID: -2661957259181972466}
-  - component: {fileID: -3751265699381302235}
   - component: {fileID: -1412461699819246612}
   m_Layer: 6
   m_Name: Wine Bottle Green with Label 1
@@ -342,22 +341,6 @@ MonoBehaviour:
   soundDuration: 2
   sounding: 0
   thrown: 0
---- !u!208 &-3751265699381302235
-NavMeshObstacle:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6287776600339200383}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Shape: 1
-  m_Extents: {x: 0.095000006, y: 0.095000006, z: 0.41000003}
-  m_MoveThreshold: 0.1
-  m_Carve: 1
-  m_CarveOnlyStationary: 1
-  m_Center: {x: 0, y: 0, z: 0.108}
-  m_TimeToStationary: 0.5
 --- !u!114 &-1412461699819246612
 MonoBehaviour:
   m_ObjectHideFlags: 0

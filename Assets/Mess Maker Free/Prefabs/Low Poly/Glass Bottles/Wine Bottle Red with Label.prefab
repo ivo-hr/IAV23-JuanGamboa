@@ -17,7 +17,6 @@ GameObject:
   - component: {fileID: 7812708337228373326}
   - component: {fileID: -2989854819870677874}
   - component: {fileID: -2437468109094013392}
-  - component: {fileID: 2877491609324912629}
   - component: {fileID: -5061869110465572357}
   m_Layer: 6
   m_Name: Wine Bottle Red with Label
@@ -259,22 +258,6 @@ MonoBehaviour:
   soundDuration: 2
   sounding: 0
   thrown: 0
---- !u!208 &2877491609324912629
-NavMeshObstacle:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 10657068676566687}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Shape: 1
-  m_Extents: {x: 0.095000006, y: 0.095000006, z: 0.41000003}
-  m_MoveThreshold: 0.1
-  m_Carve: 1
-  m_CarveOnlyStationary: 1
-  m_Center: {x: 0, y: 0, z: 0.108}
-  m_TimeToStationary: 0.5
 --- !u!114 &-5061869110465572357
 MonoBehaviour:
   m_ObjectHideFlags: 0

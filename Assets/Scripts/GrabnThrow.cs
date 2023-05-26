@@ -28,11 +28,14 @@ public class GrabnThrow : MonoBehaviour
             {
                 grabbedObject.GetComponent<Rigidbody>().isKinematic = true;
                 grabbedObject.transform.SetParent(ligamentPoint);
+                grabbedObject.layer = LayerMask.NameToLayer("Ignore Raycast");
             }
         }
 
         else if (Input.GetMouseButtonDown(1) && grabbedObject != null)
         {
+            grabbedObject.layer = LayerMask.NameToLayer("Default");
+
             grabbedObject.GetComponent<Rigidbody>().isKinematic = false;
 
             Throw();

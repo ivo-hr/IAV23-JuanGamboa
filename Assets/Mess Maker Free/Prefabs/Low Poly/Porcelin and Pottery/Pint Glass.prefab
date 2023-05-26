@@ -17,7 +17,6 @@ GameObject:
   - component: {fileID: -5111972318735541673}
   - component: {fileID: -5205428906627470933}
   - component: {fileID: 1941416728657270384}
-  - component: {fileID: -4113459603718492132}
   - component: {fileID: 2218524415639866120}
   m_Layer: 6
   m_Name: Pint Glass
@@ -258,22 +257,6 @@ MonoBehaviour:
   soundDuration: 2
   sounding: 0
   thrown: 0
---- !u!208 &-4113459603718492132
-NavMeshObstacle:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8412863031436712038}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Shape: 1
-  m_Extents: {x: 0.095000006, y: 0.095000006, z: 0.23400001}
-  m_MoveThreshold: 0.1
-  m_Carve: 1
-  m_CarveOnlyStationary: 1
-  m_Center: {x: 0, y: 0, z: 0}
-  m_TimeToStationary: 0.5
 --- !u!114 &2218524415639866120
 MonoBehaviour:
   m_ObjectHideFlags: 0

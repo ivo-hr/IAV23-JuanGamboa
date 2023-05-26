@@ -17,7 +17,6 @@ GameObject:
   - component: {fileID: -5310131534495441818}
   - component: {fileID: 4764068226044336521}
   - component: {fileID: 8533907747767230000}
-  - component: {fileID: 6140828157421619615}
   - component: {fileID: 8605923133732382536}
   m_Layer: 6
   m_Name: Mug White
@@ -258,22 +257,6 @@ MonoBehaviour:
   soundDuration: 2
   sounding: 0
   thrown: 0
---- !u!208 &6140828157421619615
-NavMeshObstacle:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3093585832671737841}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Shape: 1
-  m_Extents: {x: 0.134, y: 0.17, z: 0.18100001}
-  m_MoveThreshold: 0.1
-  m_Carve: 1
-  m_CarveOnlyStationary: 1
-  m_Center: {x: 0, y: 0.035, z: -0.032}
-  m_TimeToStationary: 0.5
 --- !u!114 &8605923133732382536
 MonoBehaviour:
   m_ObjectHideFlags: 0

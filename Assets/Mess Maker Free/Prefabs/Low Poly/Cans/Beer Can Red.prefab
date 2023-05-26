@@ -16,7 +16,6 @@ GameObject:
   - component: {fileID: 3618258937587417541}
   - component: {fileID: 1589925677807008573}
   - component: {fileID: 1512599699983626170}
-  - component: {fileID: -5060148078812167552}
   - component: {fileID: 3712449960514891088}
   m_Layer: 6
   m_Name: Beer Can Red
@@ -243,22 +242,6 @@ MonoBehaviour:
   soundDuration: 2
   sounding: 0
   thrown: 0
---- !u!208 &-5060148078812167552
-NavMeshObstacle:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3230034147011233538}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Shape: 1
-  m_Extents: {x: 0.075, y: 0.075, z: 0.21100001}
-  m_MoveThreshold: 0.1
-  m_Carve: 1
-  m_CarveOnlyStationary: 1
-  m_Center: {x: 0, y: 0, z: -0.085}
-  m_TimeToStationary: 0.5
 --- !u!114 &3712449960514891088
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -56,6 +56,8 @@ public class ZombieSpawner : MonoBehaviour
 
     public void KilledZombie()
     {
+        zombiesAlive--;
+
         int rounded = (int)kill2spawnRatio; 
         
         residueZombies += kill2spawnRatio - rounded;
@@ -69,6 +71,8 @@ public class ZombieSpawner : MonoBehaviour
         {
             zombiesToSpawn += rounded;
         }
+
+
     }
 
     private void SpawnZombie()
@@ -79,6 +83,7 @@ public class ZombieSpawner : MonoBehaviour
 
         GameObject z = Instantiate(zombiePrefab, spawnPosition, spawnPoint.rotation);
         z.layer = LayerMask.NameToLayer("Zombie");
+
         zombiesAlive++;
     }
 }

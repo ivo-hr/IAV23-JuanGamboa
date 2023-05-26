@@ -16,7 +16,6 @@ GameObject:
   - component: {fileID: -2371106011372911846}
   - component: {fileID: -2200587122698553040}
   - component: {fileID: -5125873094121220459}
-  - component: {fileID: 3053343986862607434}
   - component: {fileID: 5578340806538098948}
   m_Layer: 6
   m_Name: Beer Can Green Crushed
@@ -243,22 +242,6 @@ MonoBehaviour:
   soundDuration: 2
   sounding: 0
   thrown: 0
---- !u!208 &3053343986862607434
-NavMeshObstacle:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3417596192309181735}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Shape: 1
-  m_Extents: {x: 0.097, y: 0.089, z: 0.186}
-  m_MoveThreshold: 0.1
-  m_Carve: 1
-  m_CarveOnlyStationary: 1
-  m_Center: {x: -0.021000002, y: -0.007, z: -0.112}
-  m_TimeToStationary: 0.5
 --- !u!114 &5578340806538098948
 MonoBehaviour:
   m_ObjectHideFlags: 0

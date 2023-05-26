@@ -17,7 +17,6 @@ GameObject:
   - component: {fileID: 61650086030111648}
   - component: {fileID: -9060369026325711236}
   - component: {fileID: -1842476743227251239}
-  - component: {fileID: -5434490836238561917}
   - component: {fileID: 3798351011584818781}
   m_Layer: 6
   m_Name: Wine Bottle Red Broke
@@ -258,22 +257,6 @@ MonoBehaviour:
   soundDuration: 2
   sounding: 0
   thrown: 0
---- !u!208 &-5434490836238561917
-NavMeshObstacle:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 924935055946310828}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Shape: 1
-  m_Extents: {x: 0.095000006, y: 0.096, z: 0.208}
-  m_MoveThreshold: 0.1
-  m_Carve: 1
-  m_CarveOnlyStationary: 1
-  m_Center: {x: 0, y: 0, z: -0.094000004}
-  m_TimeToStationary: 0.5
 --- !u!114 &3798351011584818781
 MonoBehaviour:
   m_ObjectHideFlags: 0

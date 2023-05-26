@@ -17,7 +17,6 @@ GameObject:
   - component: {fileID: 271017679997430840}
   - component: {fileID: -5515978708356782830}
   - component: {fileID: -7421082627619435213}
-  - component: {fileID: 4974458596518709628}
   - component: {fileID: -9003015764861119768}
   m_Layer: 6
   m_Name: Mug White Broken
@@ -258,22 +257,6 @@ MonoBehaviour:
   soundDuration: 2
   sounding: 0
   thrown: 0
---- !u!208 &4974458596518709628
-NavMeshObstacle:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1407259320375552932}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Shape: 1
-  m_Extents: {x: 0.11800001, y: 0.116000004, z: 0.18100001}
-  m_MoveThreshold: 0.1
-  m_Carve: 1
-  m_CarveOnlyStationary: 1
-  m_Center: {x: 0.001, y: 0.08800001, z: -0.032}
-  m_TimeToStationary: 0.5
 --- !u!114 &-9003015764861119768
 MonoBehaviour:
   m_ObjectHideFlags: 0

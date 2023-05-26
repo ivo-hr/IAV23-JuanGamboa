@@ -17,7 +17,6 @@ GameObject:
   - component: {fileID: 4972926646149235834}
   - component: {fileID: 6658927890654361248}
   - component: {fileID: 1272935647463412230}
-  - component: {fileID: -3120865363093826037}
   - component: {fileID: 1877198202622256809}
   m_Layer: 6
   m_Name: Broken Plate
@@ -258,22 +257,6 @@ MonoBehaviour:
   soundDuration: 2
   sounding: 0
   thrown: 0
---- !u!208 &-3120865363093826037
-NavMeshObstacle:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2145317133613297876}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Shape: 1
-  m_Extents: {x: 0.384, y: 0.22600001, z: 0.027}
-  m_MoveThreshold: 0.1
-  m_Carve: 1
-  m_CarveOnlyStationary: 1
-  m_Center: {x: 0, y: -0.158, z: -0.029000001}
-  m_TimeToStationary: 0.5
 --- !u!114 &1877198202622256809
 MonoBehaviour:
   m_ObjectHideFlags: 0

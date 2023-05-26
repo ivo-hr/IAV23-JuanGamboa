@@ -16,7 +16,6 @@ GameObject:
   - component: {fileID: 5392165476023320}
   - component: {fileID: 7959120872860689677}
   - component: {fileID: 5082999573524965619}
-  - component: {fileID: 2233294458535110094}
   - component: {fileID: -3781183873885131249}
   m_Layer: 6
   m_Name: Soda Can Red Crushed
@@ -243,22 +242,6 @@ MonoBehaviour:
   soundDuration: 2
   sounding: 0
   thrown: 0
---- !u!208 &2233294458535110094
-NavMeshObstacle:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3230034147011233538}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Shape: 1
-  m_Extents: {x: 0.093, y: 0.124000005, z: 0.125}
-  m_MoveThreshold: 0.1
-  m_Carve: 1
-  m_CarveOnlyStationary: 1
-  m_Center: {x: 0, y: 0.05, z: -0.07700001}
-  m_TimeToStationary: 0.5
 --- !u!114 &-3781183873885131249
 MonoBehaviour:
   m_ObjectHideFlags: 0

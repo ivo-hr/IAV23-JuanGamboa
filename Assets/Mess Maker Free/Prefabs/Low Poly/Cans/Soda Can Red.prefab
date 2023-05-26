@@ -99,7 +99,6 @@ GameObject:
   - component: {fileID: 4248889151776944315}
   - component: {fileID: -5119080689077396261}
   - component: {fileID: -2940314670985681736}
-  - component: {fileID: 634410792467966497}
   - component: {fileID: -3658195789406562231}
   m_Layer: 6
   m_Name: Soda Can Red
@@ -326,22 +325,6 @@ MonoBehaviour:
   soundDuration: 2
   sounding: 0
   thrown: 0
---- !u!208 &634410792467966497
-NavMeshObstacle:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3230034147011233538}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Shape: 1
-  m_Extents: {x: 0.075, y: 0.075, z: 0.14400001}
-  m_MoveThreshold: 0.1
-  m_Carve: 1
-  m_CarveOnlyStationary: 1
-  m_Center: {x: 0, y: 0, z: -0.058000002}
-  m_TimeToStationary: 0.5
 --- !u!114 &-3658195789406562231
 MonoBehaviour:
   m_ObjectHideFlags: 0

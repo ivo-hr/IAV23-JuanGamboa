@@ -100,7 +100,6 @@ GameObject:
   - component: {fileID: -1852353314238469911}
   - component: {fileID: -4931105594581365438}
   - component: {fileID: 2313691979188491605}
-  - component: {fileID: -9108061273361684761}
   - component: {fileID: 8246174156539224273}
   m_Layer: 6
   m_Name: Vodka Bottle with label
@@ -342,22 +341,6 @@ MonoBehaviour:
   soundDuration: 2
   sounding: 0
   thrown: 0
---- !u!208 &-9108061273361684761
-NavMeshObstacle:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4761393018483043083}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Shape: 1
-  m_Extents: {x: 0.048, y: 0.14, z: 0.287}
-  m_MoveThreshold: 0.1
-  m_Carve: 1
-  m_CarveOnlyStationary: 1
-  m_Center: {x: 0, y: 0, z: 0.002}
-  m_TimeToStationary: 0.5
 --- !u!114 &8246174156539224273
 MonoBehaviour:
   m_ObjectHideFlags: 0

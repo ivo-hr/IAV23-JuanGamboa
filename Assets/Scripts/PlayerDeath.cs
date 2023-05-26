@@ -11,10 +11,11 @@ public class PlayerDeath : MonoBehaviour
     [SerializeField] private float deathTime = 5f;
     private bool startTimer = false;
     [SerializeField] private Light light;
+    private bool godMode = false;
     // Start is called before the first frame update
     void Start()
     {
-        this.enabled = !FindObjectOfType<GameSettings>().GetGodMode();
+        godMode = FindObjectOfType<GameSettings>().GetGodMode();
     }
 
     // Update is called once per frame
@@ -33,18 +34,19 @@ public class PlayerDeath : MonoBehaviour
 
             else if (gameObject.transform.localScale.x > 0)
             {
-                gameObject.transform.localScale -= new Vector3(0.015f, 0.015f, 0.015f);
+                gameObject.transform.localScale -= new Vector3(0.005f, 0.005f, 0.005f);
             }
         }
     }
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.layer == LayerMask.NameToLayer("Zombie"))
+        if (collision.gameObject.layer == LayerMask.NameToLayer("Zombie") && !godMode)
         {
+            Cursor.lockState = CursorLockMode.None;
             gameObject.GetComponent<PlayerInput>().enabled = false;
             gameObject.GetComponent<ThirdPersonController>().enabled = false;
-            gameObject.GetComponent<StarterAssetsInputs>().cursorLocked = false;
+
 
             startTimer = true;
         }

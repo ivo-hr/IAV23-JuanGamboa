@@ -26,6 +26,7 @@ public class ItemsoundSim : MonoBehaviour
             sound.transform.position = transform.position;
             sounding = true;
             thrown = false;
+            gameObject.layer = LayerMask.NameToLayer("Thowables");
         }
     }
 

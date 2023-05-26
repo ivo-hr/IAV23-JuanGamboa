@@ -42,6 +42,7 @@ public class ZombieDeath : MonoBehaviour
     public void Die()
     {
         gameObject.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
+        gameObject.layer = LayerMask.NameToLayer("Default");
         gameObject.GetComponent<ZombieAI>().enabled = false;
         gameObject.GetComponent<NavMeshAgent>().enabled = false;
         gameObject.GetComponent<Animator>().Play("Z_FallingBack");
