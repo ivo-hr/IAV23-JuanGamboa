@@ -6,7 +6,7 @@
 ## Propuesta
 Este proyecto final es para la asignatura de Inteligencia Artificial para Videojuegos del Grado en Desarrollo de Videojuegos de la UCM.
 
-La propuesta de este proyecto consiste en realizar una IA que fuera capaz de ver y escuchar elementos, y que reaccione de una manera u otra según se necesitara. Tambíén tiene que ser capaz de "acordarse" de que a qué estímulo estaba reccionando y actuar de manera a acorde, independientemente si el estímulo persiste o no.
+La propuesta de este proyecto consiste en realizar una IA que fuera capaz de ver y escuchar elementos, y que reaccione de una manera u otra según se necesitara. También tiene que ser capaz de "acordarse" de a qué estímulo estaba reaccionando y actuar de manera acorde, independientemente si el estímulo persiste o no.
 
 ## Juego
 
@@ -17,7 +17,7 @@ Shift -> Correr
 
 Space -> Saltar
 
-Click izq. (sin objeto en mano) -> Cojer objeto
+Click izq. (sin objeto en mano) -> Coger objeto
 
 Click dcho. (con objeto en mano) -> Lanzar objeto
 
@@ -29,11 +29,11 @@ El juego empieza desde un menú desde el cual se puede manejar mediante sliders 
 
 Una vez iniciado el juego dándole a jugar, aparecemos en el centro de un cruce de una ciudad rodeado de basura, desde el cual seguramente podamos escuchar a algún zombie. Podemos mover la cámara y **agarrar varios objetos** del suelo y **lanzarlos**. Al chocar con el suelo podemos escuchar el **ruido que hacen los objetos** y un efecto de partículas, el mismo que ocurre bajo nuestros pies cuando corremos o saltamos.
 
-Si vemos un zombie, se le puede lanzar el obeto directamente. Si impacta con él, el zombie muere. Si, en cambio, se lanza **cerca de él**, el zombie lo escuchará y se dirigirá hacia él. Se pasará un periodo curioseando en ese punto hasta que vuelve a empezar a merodear. Estos estados se pueden apreciar gracias a **las partículas en su cabeza**: verde es que está merodeando, azul significa que va a curiosear, rojo significa que te ha visto y amarillo que te está buscando.
+Si vemos un zombie, se le puede lanzar el objeto directamente. Si impacta con él, el zombie muere. Si, en cambio, se lanza **cerca de él**, el zombie lo escuchará y se dirigirá hacia él. Se pasará un periodo curioseando en ese punto hasta que vuelve a empezar a merodear. Estos estados se pueden apreciar gracias a **las partículas en su cabeza**: verde es que está merodeando, azul significa que va a curiosear, rojo significa que te ha visto y amarillo que te está buscando.
 
-En el caso en el que zombie te vea, puede o atacarle o huir de él, ya que corres un poco más que él. Si doblas una esquina para que **no tenga vista directa contigo**, irá al **útimo punto en el que te vió** para buscarte. Se puede **engañar al zombie lanzando un objeto para que lo escuche**. El zombie creerá que eres tú y **seguirá el ruido** que ha hacho dicho objeto.
+En el caso en el que el zombie te vea, puede o atacar o huir de él, ya que corres un poco más que él. Si doblas una esquina para que **no tenga vista directa contigo**, irá al **último punto en el que te vió** para buscarte. Se puede **engañar al zombie lanzando un objeto para que lo escuche**. El zombie creerá que eres tú y **seguirá el ruido** que ha hecho dicho objeto.
 
-Inevitablemente (si no se ha activado godMode) algún zombie acabará alcanzándote, parando el temporizador e iniciando una serie de efectos de muerte antes de volver al menú.
+Inevitablemente (si no se ha activado godMode) algún zombie acabará alcanzandote, parando el temporizador e iniciando una serie de efectos de muerte antes de volver al menú.
 
 Con estas tácticas se podrá intentar sobrevivir lo máximo posible: ¿matarás a los zombies, haciendo que aparezcan más? ¿O intentarás pasar desapercibido?
 
@@ -55,7 +55,7 @@ stateDiagram
    
 ```
 
-Va pasando por estos estados gracias a _los scripts **ZombieVision** y **ZombieHearing**_, que emulan la vista y la escucha del zombie. Estos scripts cambian el estado del zombie directamente, y cuentan con temporizadores de atencion cuando es necesario. Para el desplazamiento de los zombies de hace uso del componente **NavMeshAgent**, se van asignado los objetivos de desplazamiento en función de lo que detecta el zombie.
+Va pasando por estos estados gracias a _los scripts **ZombieVision** y **ZombieHearing**_, que emulan la vista y la escucha del zombie. Estos scripts cambian el estado del zombie directamente, y cuentan con temporizadores de atención cuando es necesario. Para el desplazamiento de los zombies se hace uso del componente **NavMeshAgent**, se van asignando los objetivos de desplazamiento en función de lo que detecta el zombie.
 
 A estos scripts _los asiste los scripts de **ItemsoundSim** y **PlayersoundSim**_, scripts que emulan sonido tanto en los objetos lanzados como en el jugador para que los zombies los detecten.
 
@@ -114,5 +114,6 @@ A estos scripts _los asiste los scripts de **ItemsoundSim** y **PlayersoundSim**
 
 - Silent Hill Downpour: https://www.youtube.com/watch?v=n3JkI3fCuw8&t=132s
 - Rio 3D TV: https://www.youtube.com/watch?v=Gq8QfcVqHQs
+
 
 
