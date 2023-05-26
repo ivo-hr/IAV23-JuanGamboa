@@ -61,7 +61,7 @@ A estos scripts _los asiste los scripts de **ItemsoundSim** y **PlayersoundSim**
 
 ## Pruebas y métricas
 
-- [Vídeo demostración de comportamientos](https://youtu.be/7uuU-owzgjM)
+- [Vídeo demostración de comportamientos](https://youtu.be/1lSJxuRdXJU)
 
 
 ## Producción
