@@ -84,7 +84,7 @@ public class GrabnThrow : MonoBehaviour
         if (Physics.Raycast(gameObject.transform.position, gameObject.transform.forward, out hit, range))
         {
             // Si el objeto que se ha detectado está en la capa "Throwable", se considera que está en rango.
-            if (hit.collider.gameObject.layer != LayerMask.NameToLayer("Throwable"))
+            if (hit.collider.gameObject.layer == LayerMask.NameToLayer("Throwables"))
             {
                 inRange = true;
                 grabbedObject = hit.collider.gameObject;
