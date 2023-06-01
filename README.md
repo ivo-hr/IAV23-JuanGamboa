@@ -8,6 +8,13 @@ Este proyecto final es para la asignatura de Inteligencia Artificial para Videoj
 
 La propuesta de este proyecto consiste en realizar una IA que fuera capaz de ver y escuchar elementos, y que reaccione de una manera u otra según se necesitara. También tiene que ser capaz de "acordarse" de a qué estímulo estaba reaccionando y actuar de manera acorde, independientemente si el estímulo persiste o no.
 
+
+El boceto inicial de comportamientos seguía el siguiente esquema:
+
+![Esquema](https://github.com/ivo-hr/IAV23-JuanGamboa/blob/main/cuteExp.png?raw=true)
+
+En él se puede observar qué reacción se quería dependiendo de los estímulos, en un formato de máquina de estados. Más adelante se definirá mejor los comportamientos.
+
 ## Juego
 
 #### Controles
