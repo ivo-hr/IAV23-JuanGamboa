@@ -70,8 +70,8 @@ A estos scripts _los asiste los scripts de **ItemsoundSim** y **PlayersoundSim**
 
 | Estado  |  Tarea  |  Fecha  |  
 |:-:|:--|:-:|
-| ✔ | Diseño: Primer borrador | 18-05-2023 |
-| ✔ | Mundo virtual, movimiento del jugador | 18-05-2023 |
+| ✔ | Diseño: Primer borrador | 16-05-2023 |
+| ✔ | Mundo virtual, movimiento del jugador | 16-05-2023 |
 | ✔ | Interacción jugador-objeto| 18-05-2023 |
 | ✔ | Simulación de sonidos de objeto y jugador| 19-05-2023 |
 | ✔ | Creación de zombies y movimiento | 21-05-2023 |
@@ -100,7 +100,7 @@ A estos scripts _los asiste los scripts de **ItemsoundSim** y **PlayersoundSim**
 
 - Generador de basura: https://assetstore.unity.com/packages/tools/modeling/mess-maker-free-213803
 
-- Demkeys: https://dogangunes91.itch.io/metro-city
+- Assets de ciudad: https://dogangunes91.itch.io/metro-city
 
 #### Documentación de ayuda
 
